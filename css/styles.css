@@ -7,7 +7,7 @@
   --background-second: #f5f4fa;
 }
 body {
-  background: #e5e5e5;
+  background: #ffffff;
   color: var(--primary-text-color);
   font-family: Roboto;
   letter-spacing: 0.03em;
@@ -30,7 +30,6 @@ a {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
 }
 .section-title {
   color: var(--title-text-color);
@@ -103,6 +102,7 @@ header {
 /*Hero*/
 .hero {
   text-align: center;
+  background-color: indianred;
 }
 .hero .hero-title {
   color: var(--title-text-color-second);
@@ -125,7 +125,6 @@ header {
   background: var(--accent-color);
   border-radius: 4px;
   padding: 10px 32px;
-  text-align: center;
 }
 
 /*Features*/
@@ -139,6 +138,7 @@ header {
 }
 
 .feature-list .title {
+  text-transform: uppercase;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -166,7 +166,6 @@ header {
 
 .product-list .title {
   border-radius: 0px 0px 4px 4px;
-
   text-align: center;
   padding: 27px 87px;
   color: var(--title-text-color-second);
@@ -224,7 +223,18 @@ header {
 footer {
   background: #2f303a;
 }
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+}
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+}
 .footer-address .location {
+  display: block;
+  margin-top: 10px;
   color: var(--title-text-color-second);
   font-weight: 400;
   font-size: 14px;
@@ -232,6 +242,8 @@ footer {
   font-style: normal;
 }
 .footer-address .link {
+  margin-top: 9px;
+  display: block;
   color: var(--footer-address-color);
   font-weight: 400;
   font-size: 14px;
@@ -239,6 +251,22 @@ footer {
   font-style: normal;
 }
 .join-us {
+  margin-top: 56px;
+  margin-left: 179px;
+  margin-right: 164px;
+}
+.newsletter {
+  margin-top: 56px;
+}
+.join-us .title {
+  display: block;
+  margin-bottom: 21px;
+  color: var(--title-text-color-second);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.newsletter .title {
   color: var(--title-text-color-second);
   font-weight: bold;
   font-size: 14px;
@@ -252,14 +280,38 @@ footer {
   text-align: center;
 }
 /*Projects*/
+.container .title-portfolio {
+  margin: 0;
+}
+.filters {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.filters .item:not(:last-child) {
+  margin-right: 8px;
+}
 .filters .button {
+  border-radius: 4px;
+  padding: 6px 22px;
   color: var(--title-text-color);
   background: var(--background-second);
 }
+
 .filters .button:hover,
 .filters .button:focus {
   color: var(--title-text-color-second);
   background: var(--accent-color);
+}
+
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.works-list .item {
+  width: 380px;
+  margin: 15px;
 }
 .works-list .title {
   color: var(--title-text-color);
