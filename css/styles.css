@@ -41,14 +41,15 @@ a {
   margin-bottom: 50px;
 }
 /*Header*/
-header {
-  background: #ffffff;
-}
 .header-container {
   display: flex;
   align-items: center;
 }
 .logo {
+  display: block;
+  margin-right: 85px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   color: var(--accent-color);
   font-family: Raleway;
   font-weight: 700;
@@ -62,14 +63,8 @@ header {
 .site-nav {
   display: flex;
 }
-.site-nav .item {
-  margin-right: 50px;
-}
-.site-nav .item:last-child {
-  margin-right: 360px;
-}
-.site-nav .item:first-child {
-  margin-left: 86px;
+.site-nav .item + .item {
+  margin-left: 50px;
 }
 .site-nav .link {
   display: block;
@@ -78,12 +73,13 @@ header {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
+}
+.address {
+  margin-left: auto;
 }
 .address .link {
   color: var(--primary-text-color);
@@ -96,8 +92,9 @@ header {
 .address .link:focus {
   color: var(--accent-color);
 }
-.address .link + .link {
-  margin-left: 50px;
+
+.address .link:not(:last-child) {
+  margin-right: 50px;
 }
 /*Hero*/
 .hero {
@@ -138,15 +135,16 @@ header {
 }
 
 .feature-list .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
   text-transform: uppercase;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  margin-top: 30px;
-  margin-bottom: 10px;
 }
 .feature-list .text {
+  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -165,6 +163,7 @@ header {
 }
 
 .product-list .title {
+  margin: 0;
   border-radius: 0px 0px 4px 4px;
   text-align: center;
   padding: 27px 87px;
@@ -187,8 +186,12 @@ header {
   width: 278px;
   margin: 15px;
 }
+.team-list .foto {
+  display: block;
+  margin-bottom: 30px;
+}
 .team-list .title {
-  margin-top: 30px;
+  margin-top: 0px;
   margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
@@ -232,6 +235,9 @@ footer {
   flex-direction: column;
   margin-top: 48px;
 }
+.footer-contacts .part-footer {
+  color: var(--title-text-color-second);
+}
 .footer-address .location {
   display: block;
   margin-top: 10px;
@@ -261,12 +267,14 @@ footer {
 .join-us .title {
   display: block;
   margin-bottom: 21px;
+  text-transform: uppercase;
   color: var(--title-text-color-second);
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
 }
 .newsletter .title {
+  text-transform: uppercase;
   color: var(--title-text-color-second);
   font-weight: bold;
   font-size: 14px;
