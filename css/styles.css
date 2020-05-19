@@ -25,7 +25,7 @@ a {
   padding-bottom: 94px;
 }
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -48,8 +48,8 @@ a {
 .logo {
   display: block;
   margin-right: 85px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  /*padding-top: 25px;
+  padding-bottom: 25px;*/
   color: var(--accent-color);
   font-family: Raleway;
   font-weight: 700;
@@ -73,6 +73,8 @@ a {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -161,6 +163,9 @@ a {
   width: 380px;
   margin: 15px;
 }
+.product-list .foto{
+  display: block;
+}
 
 .product-list .title {
   margin: 0;
@@ -206,8 +211,8 @@ a {
   line-height: 1.19;
 }
 
-.cosials:hover,
-.cosials:focus {
+.socials:hover,
+.socials:focus {
   color: var(--accent-color);
 }
 /*Clients*/
@@ -216,7 +221,11 @@ a {
   margin: -15px;
 }
 .clients-list .item {
-  width: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
@@ -281,6 +290,10 @@ footer {
   line-height: 1.14;
 }
 .copyright {
+  padding-top: 18px;
+  padding-bottom: 21px;
+  margin: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--footer-address-color);
   font-weight: 400;
   font-size: 12px;
@@ -334,3 +347,7 @@ footer {
   font-size: 16px;
   line-height: 1.87;
 }
+/*background: #FFFFFF;
+border: 1px solid #EEEEEE;
+box-sizing: border-box;
+border-radius: 5px;
