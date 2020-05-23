@@ -20,6 +20,11 @@ ul {
 a {
   text-decoration: none;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -44,12 +49,11 @@ a {
 .header-container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 .logo {
   display: block;
   margin-right: 85px;
-  /*padding-top: 25px;
-  padding-bottom: 25px;*/
   color: var(--accent-color);
   font-family: Raleway;
   font-weight: 700;
@@ -101,7 +105,7 @@ a {
 /*Hero*/
 .hero {
   text-align: center;
-  background-color: indianred;
+  /*background-color: indianred;*/
 }
 .hero .hero-title {
   color: var(--title-text-color-second);
@@ -151,22 +155,15 @@ a {
   font-size: 14px;
   line-height: 1.71;
 }
-.feature-list .icon {
-  background: var(--accent-color);
-}
 /*Products*/
 .product-list {
   display: flex;
   margin: -15px;
 }
 .product-list .item {
-  width: 380px;
+  width: 370px;
   margin: 15px;
 }
-.product-list .foto{
-  display: block;
-}
-
 .product-list .title {
   margin: 0;
   border-radius: 0px 0px 4px 4px;
@@ -188,11 +185,13 @@ a {
   text-align: center;
 }
 .team-list .item {
-  width: 278px;
+  width: 270px;
   margin: 15px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .team-list .foto {
-  display: block;
   margin-bottom: 30px;
 }
 .team-list .title {
@@ -238,18 +237,23 @@ footer {
 .footer-container {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
 }
 .footer-contacts {
   display: flex;
   flex-direction: column;
-  margin-top: 48px;
+  padding-top: 48px;
+  align-items: baseline;
+}
+.footer-contacts > .logo {
+  margin-bottom: 10px;
 }
 .footer-contacts .part-footer {
   color: var(--title-text-color-second);
 }
 .footer-address .location {
+  margin-bottom: 9px;
   display: block;
-  margin-top: 10px;
   color: var(--title-text-color-second);
   font-weight: 400;
   font-size: 14px;
@@ -257,7 +261,6 @@ footer {
   font-style: normal;
 }
 .footer-address .link {
-  margin-top: 9px;
   display: block;
   color: var(--footer-address-color);
   font-weight: 400;
@@ -265,10 +268,13 @@ footer {
   line-height: 24px;
   font-style: normal;
 }
+.footer-address .link-mail {
+  margin-bottom: 9px;
+}
 .join-us {
   margin-top: 56px;
-  margin-left: 179px;
-  margin-right: 164px;
+  /*margin-left: 179px;
+  margin-right: 164px;*/
 }
 .newsletter {
   margin-top: 56px;
@@ -331,10 +337,15 @@ footer {
   margin: -15px;
 }
 .works-list .item {
-  width: 380px;
+  width: 370px;
   margin: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
 }
 .works-list .title {
+  margin-top: 0;
+  margin-bottom: 4px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -342,12 +353,22 @@ footer {
   letter-spacing: 0.06em;
 }
 .works-list .filter-text {
+  margin: 0;
   color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
 }
-/*background: #FFFFFF;
-border: 1px solid #EEEEEE;
-box-sizing: border-box;
-border-radius: 5px;
+.works-list .text-about {
+  margin: 0;
+}
+.card-content {
+  padding: 20px 24px;
+  border: solid #eeeeee;
+  border-top-width: 0;
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-bottom-width: 1px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
